@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_mini" >
+
+    <TextView
+        android:id="@+id/tv_process_number"
+        android:layout_width="@dimen/height_30"
+        android:layout_height="@dimen/height_30"
+        android:background="@drawable/green_roundrect_30"
+        android:text="@string/number_1"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/tv_process_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_mini"
+        android:text="@string/TICKET_IDENTIFICATION"
+        android:textColor="@color/bgm_green"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

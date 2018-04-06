@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- Custom Action Bar -->
+
+    <include
+        android:id="@+id/custom_actionbar"
+        layout="@layout/custom_actionbar" />
+
+    <!-- Profile Avatar -->
+
+    <RelativeLayout
+        android:id="@+id/rl_avatar_bg"
+        android:layout_width="@dimen/profile_avatar_size"
+        android:layout_height="@dimen/profile_avatar_size"
+        android:layout_below="@+id/custom_actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:padding="@dimen/padding_mini" >
+
+        <com.be.my.guest.ui.DynamicImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sample_avatar" />
+
+        <ImageView
+            android:id="@+id/iv_edit_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_edit_avatar" />
+    </RelativeLayout>
+
+    <!-- Profile Content -->
+
+    <RelativeLayout
+        android:id="@+id/rl_name_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_below="@+id/rl_avatar_bg"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:background="@drawable/edittext_empty_bg"
+            android:inputType="textPersonName"
+            android:maxLength="@integer/MAX_NAME_LEN"
+            android:paddingLeft="@dimen/padding_large"
+            android:text="@string/sample_name"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_email_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_below="@+id/rl_name_bg"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Email"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:paddingLeft="@dimen/padding_large"
+            android:text="@string/sample_email"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_mini" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_birthday_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_below="@+id/rl_email_bg"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Birth_Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:maxLength="@integer/MAX_NAME_LEN"
+            android:paddingLeft="@dimen/padding_large"
+            android:text="@string/sample_birthday"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_telephone_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_below="@+id/rl_birthday_bg"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Telephone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:background="@drawable/edittext_empty_bg"
+            android:inputType="phone"
+            android:maxLength="@integer/MAX_NAME_LEN"
+            android:paddingLeft="@dimen/padding_large"
+            android:text="@string/sample_telephone"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_password_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_below="@+id/rl_telephone_bg"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:background="@drawable/edittext_empty_bg"
+            android:inputType="textPassword"
+            android:maxLength="@integer/MAX_PASSWORD_LEN"
+            android:paddingLeft="@dimen/padding_large"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_newpass_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_below="@+id/rl_password_bg"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/New_Pass"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_newpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:background="@drawable/edittext_empty_bg"
+            android:inputType="textPassword"
+            android:maxLength="@integer/MAX_PASSWORD_LEN"
+            android:paddingLeft="@dimen/padding_large"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_city_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_below="@+id/rl_newpass_bg"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/City"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:background="@drawable/edittext_empty_bg"
+            android:inputType="text"
+            android:maxLength="@integer/MAX_NAME_LEN"
+            android:paddingLeft="@dimen/padding_large"
+            android:text="@string/California"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom_button"
+        layout="@layout/bottom_button" />
+
+</RelativeLayout>

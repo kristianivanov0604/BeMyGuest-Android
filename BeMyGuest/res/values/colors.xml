@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- System Colors -->
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="translucant">#40ffffff</color>
+    <color name="grey">#d4d4d4</color>
+    
+    
+    <!-- Custom Colors -->
+    <color name="bgm_blue">#3b579d</color>
+    <color name="bgm_pink">#cc2c51</color>
+    <color name="bgm_dark_blue">#283641</color>
+    <color name="bgm_dlg_icon_bg">#303f4b</color>
+    <color name="bgm_green">#43b68f</color>
+    <color name="bgm_background">#f6f6f6</color>
+    
+</resources>

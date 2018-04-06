@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/bgm_dark_blue"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/space_mini" >
+
+    <TextView
+        android:id="@+id/tv_event_model"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_30"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pink_roundrect"
+        android:gravity="center"
+        android:text="@string/Parties"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+</RelativeLayout>

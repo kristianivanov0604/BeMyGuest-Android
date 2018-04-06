@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_event_listitem"
+    android:gravity="bottom"
+    android:background="@color/white">
+
+    <com.be.my.guest.ui.DynamicImageView
+        android:id="@+id/iv_event_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_mask_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mask_image"
+        android:contentDescription="@string/app_name" />
+    
+    <TextView
+        android:id="@+id/tv_event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_event_model"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ll_right"
+        android:layout_marginBottom="@dimen/padding_mini"
+        android:layout_marginLeft="@dimen/padding_mini"
+        android:text="@string/Beauty_Essex"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_large" />
+    
+    <TextView
+        android:id="@+id/tv_event_model"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_30"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/padding_mini"
+        android:layout_marginLeft="@dimen/padding_mini"
+        android:background="@drawable/green_roundrect_30"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini"
+        android:text="@string/LOUNGE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_mini" />
+
+
+    <LinearLayout 
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:gravity="right">
+	    <TextView
+	        android:id="@+id/tv_event_clock"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="@dimen/padding_mini"
+	        android:layout_marginRight="@dimen/padding_mini"
+	        android:drawableLeft="@drawable/icon_clock"
+	        android:text="@string/hours_2"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_size_mini" />
+	    
+	    <TextView
+	        android:id="@+id/tv_reward_points"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/height_30"
+	        android:layout_marginBottom="@dimen/padding_mini"
+	        android:layout_marginRight="@dimen/padding_mini"
+	        android:background="@drawable/grey_roundrect"
+	        android:gravity="center"
+	        android:paddingLeft="@dimen/padding_mini"
+	        android:paddingRight="@dimen/padding_mini"
+	        android:text="@string/points_40"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_size_mini" />        
+    </LinearLayout>
+
+
+</RelativeLayout>

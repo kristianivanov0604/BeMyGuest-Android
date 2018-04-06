@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_actionbar"
+    android:layout_alignParentTop="true"
+    android:background="@color/bgm_pink" >
+
+    <ImageView
+        android:id="@+id/iv_left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini"
+        android:src="@drawable/icon_return" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/Check_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_36"
+        android:layout_centerInParent="true"
+        android:drawableBottom="@drawable/icon_dropdown"
+        android:text="@string/California"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+    <ImageView
+        android:id="@+id/iv_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini"/>
+
+</RelativeLayout>

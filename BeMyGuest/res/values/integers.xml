@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <integer name="MIN_NAME_LEN">1</integer>
+    <integer name="MAX_NAME_LEN">30</integer>
+    <integer name="MIN_MAIL_LEN">1</integer>
+    <integer name="MAX_MAIL_LEN">30</integer>
+    <integer name="MIN_PASSWORD_LEN">1</integer>
+    <integer name="MAX_PASSWORD_LEN">30</integer>
+    <integer name="PHOEN_LEN">11</integer>
+    <integer name="PARTY_REWARD_POINTS">10</integer>
+    <integer name="LISTING_POSSIBLE_MINUTES">120</integer>
+    
+</resources>

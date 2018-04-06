@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgm_dark_blue" >
+
+    <!-- Custom Action Bar -->
+
+    <include
+        android:id="@+id/custom_actionbar"
+        layout="@layout/custom_actionbar" />
+
+    <!-- Horizontal ListView Bar -->
+
+    <com.devsmart.android.ui.HorizontalListView
+        android:id="@+id/lv_model_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30"
+        android:layout_below="@+id/custom_actionbar"
+        android:layout_marginBottom="@dimen/padding_mini"
+        android:layout_marginLeft="@dimen/padding_mini"
+        android:layout_marginTop="@dimen/padding_mini"
+        android:background="@color/bgm_dark_blue"
+        android:overScrollMode="never" />
+
+    <!-- Calendar and Date -->
+
+    <RelativeLayout
+        android:id="@+id/rl_select_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:layout_below="@+id/lv_model_list"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_calendar_button"
+            android:layout_width="@dimen/height_36"
+            android:layout_height="@dimen/height_36"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_mini"
+            android:background="@drawable/pink_circle"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_calendar" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_calendar_button"
+            android:drawableBottom="@drawable/icon_dropdown"
+            android:paddingLeft="@dimen/padding_mini"
+            android:text="@string/Today"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <!-- Events/Locals/Check-in/Products ListView -->
+
+    <ListView
+        android:id="@+id/lv_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_select_date"
+        android:background="@color/black"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <!-- Cities ListView -->
+
+    <ListView
+        android:id="@+id/lv_city_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_actionbar"
+        android:background="@color/bgm_pink"
+        android:divider="@color/translucant"
+        android:dividerHeight="@dimen/height_horizontal_line"
+        android:entries="@array/side_menu_items"
+        android:overScrollMode="never"
+        android:padding="@dimen/padding_mini"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

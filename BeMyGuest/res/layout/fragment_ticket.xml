@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgm_background" >
+
+    <!-- Custom Action Bar -->
+
+    <include
+        android:id="@+id/custom_actionbar"
+        layout="@layout/custom_actionbar" />
+
+    <!-- Ticket View -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_actionbar"
+        android:layout_margin="@dimen/margin_mini"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/Stone_Rose_Lounge"
+            android:textColor="@color/bgm_pink"
+            android:textSize="@dimen/text_size_extra_large"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sample_event_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            layout="@layout/dotted_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/GENERAL_ADMISSION"
+            android:textColor="@color/bgm_pink"
+            android:textSize="@dimen/text_size_extra_large" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_mini" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_mini"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Full_Price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_full_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Price_10"
+                    android:textColor="@color/bgm_pink"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_36"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_mini"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_minus_button"
+                    android:layout_width="@dimen/height_30"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/minus"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_extra_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_ticket_count"
+                    android:layout_width="@dimen/height_36"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/empty_with_grey_border_bg"
+                    android:gravity="center"
+                    android:text="@string/count_3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/tv_plus_button"
+                    android:layout_width="@dimen/height_30"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_extra_large"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_marginLeft="@dimen/margin_mini"
+            android:layout_marginRight="@dimen/margin_mini"
+            android:background="@color/grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_mini" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_mini"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sub_Total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_sub_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Price_30"
+                    android:textColor="@color/bgm_pink"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_mini"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rewards"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_rewards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Price_15"
+                    android:textColor="@color/bgm_pink"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_horizontal_line"
+            android:layout_marginLeft="@dimen/margin_mini"
+            android:layout_marginRight="@dimen/margin_mini"
+            android:background="@color/grey" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/profile_avatar_size"
+            android:layout_height="@dimen/profile_avatar_size"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/dark_blue_circle" >
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/Price_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_extra_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_total_price"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="@string/Total"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Bottom Button -->
+
+    <include
+        android:id="@+id/bottom_button"
+        layout="@layout/bottom_button" />
+
+</RelativeLayout>

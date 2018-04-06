@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/be/my/guest/fragments/EventsFragment.java" />
+        <ignore path="src/com/be/my/guest/fragments/LocalsFragment.java" />
+        <ignore path="src/com/be/my/guest/fragments/MapFragment.java" />
+        <ignore path="src/com/be/my/guest/fragments/MyMapFragment.java" />
+        <ignore path="src/com/be/my/guest/fragments/ProductsFragment.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/be/my/guest/adapters/MainListAdapter.java" />
+    </issue>
+</lint>

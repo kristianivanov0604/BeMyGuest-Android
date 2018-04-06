@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- Custom Action Bar -->
+
+    <include
+        android:id="@+id/custom_actionbar"
+        layout="@layout/custom_actionbar" />
+
+    <!-- Map Fragment -->
+
+    <RelativeLayout
+        android:id="@+id/fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_actionbar" />
+
+    <!-- Info Layout -->
+
+    <LinearLayout
+        android:id="@+id/ll_forground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_actionbar" 
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="@dimen/padding_large">
+            
+		    <include
+		        android:id="@+id/tag_info"
+		        layout="@layout/maptag_info_content" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

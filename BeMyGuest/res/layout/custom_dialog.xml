@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_mini"
+    android:layout_marginRight="@dimen/margin_mini"
+    android:background="@color/bgm_dark_blue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal" 
+    android:layout_gravity="center">
+
+    <!-- ICON -->
+
+    <ImageView
+        android:id="@+id/dlg_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:background="@drawable/dlg_icon_bg"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/padding_mini"
+        android:src="@drawable/icon_congratulation" />
+
+    <!-- TITLE -->
+
+    <TextView
+        android:id="@+id/dlg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:gravity="center"
+        android:text="@string/Congratulation"
+        android:textColor="@color/bgm_green"
+        android:textSize="@dimen/text_size_large"
+        android:maxLines="1" />
+
+    <!-- MESSAGE -->
+
+    <TextView
+        android:id="@+id/dlg_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:gravity="center"
+        android:text="@string/Great_having"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"/>
+    
+    <!-- Seperator -->
+    <View
+        android:id="@+id/dlg_seperator"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_horizontal_line"
+        android:background="@color/bgm_dlg_icon_bg" />
+
+    <!-- DESCRIPTION -->
+
+    <TextView
+        android:id="@+id/dlg_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:gravity="center"
+        android:text="@string/sample_event_description"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_mini"/>
+    
+    <ListView 
+        android:id="@+id/description_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:background="@color/bgm_dark_blue"
+        android:scrollbars="none"
+        android:divider="@color/bgm_dark_blue"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="2">
+
+        <!-- POSITIVE BUTTON -->
+		<TextView 
+		    android:id="@+id/ok_button"
+		    android:layout_width="0dp"
+		    android:layout_height="@dimen/height_small_button"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="@dimen/margin_mini"
+		    android:layout_marginRight="@dimen/margin_mini"
+		    android:background="@color/bgm_pink"
+		    android:gravity="center"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_normal"
+		    android:text="@string/OK"/>        
+
+        <!-- NEGATIVE BUTTON -->
+		<TextView 
+		    android:id="@+id/cancel_button"
+		    android:layout_width="0dp"
+		    android:layout_height="@dimen/height_small_button"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="@dimen/margin_mini"
+		    android:layout_marginRight="@dimen/margin_mini"
+		    android:background="@color/bgm_dlg_icon_bg"
+		    android:gravity="center"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_normal"
+		    android:text="@string/CANCEL"/>        
+        
+				
+    </LinearLayout>
+</LinearLayout>

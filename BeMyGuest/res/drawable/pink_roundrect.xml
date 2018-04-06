@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/bgm_pink" />
+
+    <stroke
+        android:width="0dp"
+        android:color="@color/bgm_pink" />
+
+    <padding
+        android:bottom="2dp"
+        android:left="@dimen/padding_mini"
+        android:right="@dimen/padding_mini"
+        android:top="2dp" />
+	<corners android:radius="@dimen/height_30"/>
+</shape>

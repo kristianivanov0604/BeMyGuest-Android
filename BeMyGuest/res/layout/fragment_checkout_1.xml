@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgm_background" >
+
+    <!-- Custom Action Bar -->
+
+    <include
+        android:id="@+id/custom_actionbar"
+        layout="@layout/custom_actionbar" />
+
+    <!-- Ticket Identification -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_button"
+        android:layout_below="@+id/custom_actionbar"
+        android:layout_marginLeft="@dimen/margin_mini"
+        android:layout_marginRight="@dimen/margin_mini"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/ticket_number"
+            layout="@layout/checkout_process_title" />
+        
+        <ListView 
+            android:id="@+id/lv_ticket_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+    <!-- Bottom Button -->
+
+    <include
+        android:id="@+id/bottom_button"
+        layout="@layout/bottom_button" />
+
+</RelativeLayout>

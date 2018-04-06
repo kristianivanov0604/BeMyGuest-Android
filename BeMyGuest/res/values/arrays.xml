@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Side Menu Items Array -->
+    <string-array name="side_menu_items">
+        <item>Events</item>
+        <item>Locals</item>
+        <item>Store Points</item>
+        <item>Map</item>
+        <item>Tickets</item>
+        <item>Settings</item>
+    </string-array>
+
+    <!-- Event Model Items Array -->
+    <string-array name="event_model_items">
+        <item>All</item>
+        <item>Today</item>
+        <item>Bars</item>
+        <item>Clubs</item>
+        <item>Parties</item>
+    </string-array>
+
+    <!-- Place Model Items Array -->
+    <string-array name="place_model_items">
+        <item>All</item>
+        <item>Bars</item>
+        <item>Clubs</item>
+    </string-array>
+
+</resources>

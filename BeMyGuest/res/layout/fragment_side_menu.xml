@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgm_dark_blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgm_pink"
+        android:paddingBottom="@dimen/padding_normal" >
+
+        <ImageView
+            android:id="@+id/iv_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_normal"
+            android:src="@drawable/icon_menu" />
+
+        <LinearLayout
+            android:id="@+id/iv_avatar_edge"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_below="@+id/iv_toggle_button"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/avatar_edge"
+            android:padding="@dimen/avatar_edge_width">
+            
+	        <com.be.my.guest.ui.DynamicImageView
+	            android:id="@+id/iv_avatar"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:contentDescription="@string/app_name"/>
+            
+        </LinearLayout>
+        
+        
+        
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_avatar_edge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:text="@string/sample_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:text="@string/POINTS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_mini" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_side_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_normal"
+        android:divider="@color/translucant"
+        android:dividerHeight="@dimen/height_horizontal_line"
+        android:entries="@array/side_menu_items"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

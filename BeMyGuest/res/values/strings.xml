@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global String Resources -->
+    <string name="app_name">BeMyGuest</string>
+    <string name="Confirm_Finish">Please click Return key again to exit.</string>
+    <string name="OK">OK</string>
+    <string name="CANCEL">CANCEL</string>
+    
+    <!-- Message String Resources -->    
+    <string name="Facebook_Login_Success">FaceBook login success.</string>
+    <string name="Facebook_Login_Failure">FaceBook login failure.</string>
+    <string name="Login_Success">Login success.</string>
+    <string name="Login_Failure">Login failure.</string>
+    <string name="Signup_Success">Signup success.</string>
+    <string name="Signup_Failure">Signup failure.</string>
+    <string name="EditProfile_Success">Edit profile success.</string>
+    <string name="EditProfile_Failure">Edit profile failure.</string>
+    <string name="Loading_Failure">Loading application data failure.</string>
+    <string name="Loading_Success">Loading application data success.</string>
+    
+    <!-- String Resources for Onboarding -->
+    <string name="CONNECT_WITH_FACEBOOK">CONNECT WITH FACEBOOK</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="SIGNUP">SIGNUP</string>
+    <string name="REGISTER_NOW">REGISTER NOW</string>
+    <string name="OR">OR</string>
+    <string name="I_accept_terms_conditions">I accept "Terms and Conditions"</string>
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="Password">Password</string>
+    <string name="New_Pass">New Pass</string>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="Forgot_Password">Forgot Password</string>
+    <string name="Newhere_Signup">New here? Sign up</string>
+    <string name="Please_review">Please review information you have entered.</string>
+
+    <!-- Strings for SlideMenu -->
+    <string name="sample_name">BIAGIO VINENZO MAMONE</string>
+    <string name="POINTS">POINTS</string>
+    <string name="Events">Events</string>
+    <string name="Check_in">Check-in</string>
+    <string name="Locals">Locals</string>
+    <string name="Store_Points">Store Points</string>
+    <string name="Map">Map</string>
+    <string name="Settings">Settings</string>
+
+    <!-- Strings for Event -->
+    <string name="California">California</string>
+    <string name="Today">Today</string>
+    <string name="LOUNGE">LOUNGE</string>
+    <string name="points_40">+40 pts</string>
+    <string name="pts">pts</string>
+    <string name="Beauty_Essex">Beauty &amp; Essex</string>
+    <string name="hours_2">2h</string>
+    <string name="Parties">Parties</string>
+    <string name="Event_Info">Event Info</string>
+    <string name="Stone_Rose_Lounge">Stone Rose Lounge</string>
+    <string name="sample_event_time">Monday, October 2nd @19h</string>
+    <string name="sample_event_address">73 shoe Ln London EC4a 3BQ</string>
+    <string name="Get_ready_for">Get ready for an epic awesome fest</string>
+    <string name="sample_event_description">Lorem lpsum is simply dummy text of the printing and typesetting industry. 
+        Lorem lpsum has been the industry\'s standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled.</string>
+    <string name="BOOK_NOW">BOOK NOW</string>
+    <string name="ADD_TO_VIP_LIST">ADD TO VIP LIST</string>
+    <string name="CONFIRM_BOOKING">CONFIRM BOOKING</string>
+    <string name="GENERAL_ADMISSION">GENERAL ADMISSION</string>
+    <string name="Full_Price">Full Price @</string>
+    <string name="Sub_Total">Sub Total</string>
+    <string name="Rewards">Rewards</string>
+    <string name="Price">Price</string>
+    <string name="Price_10">$ 10.00</string>
+    <string name="Price_15">$ 15.00</string>
+    <string name="Price_25">$ 25.00</string>
+    <string name="Price_30">$ 30.00</string>
+    <string name="Price_75">$ 75.00</string>
+    <string name="Price_85">$ 85.00</string>
+    <string name="Tax">Tax</string>
+    <string name="Your_Total">Your Total</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="count_3">3</string>
+    <string name="Total">Total</string>
+    <string name="Event_Ticket">Event Ticket</string>
+    <string name="dotted_line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</string>
+    <string name="Checkout">Checkout</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="TICKET_IDENTIFICATION">TICKET IDENTIFICATION</string>
+    <string name="BILLING_INFORMATION">BILLING INFORMATION</string>
+    <string name="CREDIT_CARD_INFORMATION">CREDIT CARD INFORMATION</string>
+    <string name="YOUR_TOTAL_OVERVIEW">YOUR TOTAL OVERVIEW</string>
+    <string name="TICKET">TICKET</string>
+    <string name="Male_3_Lot">Male 3 Lot</string>
+    <string name="Female_3_Lot">Female 3 Lot</string>
+    <string name="Qty.3">Qty.3</string>
+    <string name="NEXT_PROCESS">NEXT PROCESS</string>
+    <string name="COMPLETE">COMPLETE</string>
+    <string name="Complete_Name">Complete Name</string>
+    <string name="RG_CPF">RG/CPF</string>
+    <string name="CPF">CPF</string>
+    <string name="Address">Address</string>
+    <string name="State">State</string>
+    <string name="Country">Country</string>
+    <string name="Card_Number">Card Number</string>
+    <string name="Expires_On">Expires On</string>
+    <string name="CVV_Code">CVV Code</string>
+    <string name="Congratulation">Congratulations!</string>
+    <string name="Great_having">Great having you as a client.</string>
+    <string name="sample_qr_code">05124173c48d64a04e1a207c28bb95e1</string>
+    <string name="Ticket_QR_Code">Ticket QR Code</string>
+    <string name="Owner_Name">Owner Name</string>
+    <string name="sample_owner_name">"Ani Zmboyan"</string>
+    <string name="ID_Number">ID Number</string>
+    <string name="sample_id_number">BC150</string>
+    <string name="VIP_Success">Your name is added successfully!</string>
+
+    <!-- Strings for Check-in -->
+    <string name="Km">Km</string>
+    <string name="Holding_Club">Holding Club</string>
+    <string name="CHECK_IN_HERE">CHECK IN HERE</string>
+    <string name="CHECK_IN">CHECK-IN</string>
+
+    <!-- Strings for Locals -->
+    <string name="Local">Local</string>
+    <string name="Kiss_Fly">Kiss &amp; Fly</string>
+    <string name="CALL">CALL</string>
+
+    <!-- Strings for Store Points -->
+    <string name="List_of_products">List of products</string>
+    <string name="Tamari_2_Por1">Tamaki 2 Por 1</string>
+    <string name="Markis_Place_Barao">Markis Place - Barao</string>
+    <string name="Points_32">32 Points</string>
+    <string name="Product_Info">Product Info</string>
+    <string name="EXCHANGE">EXCHANGE</string>
+    <string name="Confirmation">Confirmation</string>
+    <string name="sample_exchange_message">Would you like to exchange 32 points for this benefit?</string>
+    <string name="Exchange_successful">Exchange_successful.\nFollow the instructions to remove.</string>
+
+    <!-- Strings for Map -->
+    <string name="HOW_TO_GET_THERE">HOW TO GET THERE</string>
+    <string name="MORE_INFORMATION">MORE INFORMATION</string>
+
+    <!-- Strings for Profile -->
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="Telephone">Telephone</string>
+    <string name="Birth_Date">Birth Date</string>
+    <string name="sample_email">carmenherrera@gmail.com</string>
+    <string name="sample_birthday">10 June, 1980</string>
+    <string name="sample_telephone">000 0000 0000</string>
+    <string name="City">City</string>
+    <string name="DONE_CHANGES">DONE CHANGES</string>
+
+    <!-- Strings for Settings -->
+    <string name="About">About</string>
+    <string name="Copyright">Copyright</string>
+    <string name="Sign_Out">Sign Out</string>
+
+    <!-- Strings for Benefits -->
+    <string name="My_Benefit_Store">My Benefit Store</string>
+    <string name="Congratulations">Congratulations</string>
+    <string name="sample_congratulation_title">Birthday:The Birth</string>
+    <string name="sample_congratulation_content1">Musculino-Pre-lote</string>
+    <string name="sample_congratulation_content2">Fernando Dias(400225487)</string>
+
+    <!-- Facebook APP ID -->
+    <string name="facebook_app_id">441475282573531</string>
+    
+    <!-- Date Format String -->
+    <string name="BIRTHDAY_SHOW_FORMAT">dd MMM, yyyy</string>
+    <string name="BIRTHDAY_SAVE_FORMAT">MM/dd/yyyy</string>
+    <string name="EVENT_DATE_FORMAT">yyyy-MM-dd</string>
+    <string name="ISO8601_DATE_FORMAT">yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'</string>
+    <string name="FULL_DATE_FORMAT">EEEE, dd MMMM @HH\'h\'mm</string>
+    
+</resources>

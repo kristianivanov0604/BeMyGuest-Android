@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- Custom Action Bar -->
+
+    <include
+        android:id="@+id/custom_actionbar"
+        layout="@layout/custom_actionbar" />
+
+    <!-- Benefit List -->
+
+    <ListView
+        android:id="@+id/lv_benefit_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_actionbar"
+        android:layout_margin="@dimen/margin_mini"
+        android:background="@color/white"
+        android:divider="@color/grey"
+        android:dividerHeight="@dimen/height_horizontal_line"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

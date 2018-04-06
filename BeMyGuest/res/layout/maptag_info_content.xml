@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_maptag_info"
+    android:layout_height="@dimen/height_maptag_info"
+    android:background="@drawable/maptag_info_bg"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/tv_get_there"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_mini"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal"
+        android:text="@string/HOW_TO_GET_THERE"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_mini" />
+
+    <TextView
+        android:id="@+id/tv_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:gravity="center"
+        android:text="@string/MORE_INFORMATION"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_mini" />
+
+</LinearLayout>

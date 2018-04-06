@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- Custom Action Bar -->
+
+    <include
+        android:id="@+id/custom_actionbar"
+        layout="@layout/custom_actionbar" />
+
+    <!-- Event Video/Image View -->
+
+    <RelativeLayout
+        android:id="@+id/rl_video_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_event_listitem"
+        android:layout_below="@+id/custom_actionbar"
+        android:background="@color/white" >
+
+        <com.be.my.guest.ui.DynamicImageView
+            android:id="@+id/iv_event_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_mask_bar"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mask_image"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/iv_play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_video_play"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/white_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_normal"
+        android:layout_below="@+id/rl_video_bg"
+        android:background="@color/white" />
+
+    <!-- Event Information View -->
+
+    <LinearLayout
+        android:id="@+id/ll_info_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/white_bar"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini" >
+
+        <TextView
+            android:id="@+id/tv_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/Stone_Rose_Lounge"
+            android:textColor="@color/bgm_pink"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_grey_points"
+            android:gravity="left"
+            android:text="@string/Points_32"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_mini" />
+
+        <TextView
+            android:id="@+id/tv_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_grey_local"
+            android:gravity="left"
+            android:text="@string/Markis_Place_Barao"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_mini" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_grey_clock"
+            android:gravity="left"
+            android:text="@string/sample_event_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_mini" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_grey_map"
+            android:gravity="left"
+            android:text="@string/sample_event_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_mini" />
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_grey_call"
+            android:gravity="left"
+            android:text="@string/sample_telephone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_mini" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:background="@color/grey" />
+    </LinearLayout>
+
+    <!-- Event Description View -->
+
+    <ScrollView
+        android:id="@+id/sv_description_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_button"
+        android:layout_below="@+id/ll_info_bg"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/padding_mini"
+        android:paddingRight="@dimen/padding_mini"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/sample_event_description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_mini" />
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/lv_description_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_button"
+        android:layout_below="@+id/ll_info_bg"
+        android:layout_marginLeft="@dimen/margin_mini"
+        android:layout_marginRight="@dimen/margin_mini"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@color/white"
+        android:divider="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <!-- Bottom Button -->
+
+    <include
+        android:id="@+id/bottom_button"
+        layout="@layout/bottom_button" />
+
+    <!-- Share Button -->
+
+    <ImageView
+        android:id="@+id/iv_share_button"
+        android:layout_width="@dimen/height_36"
+        android:layout_height="@dimen/height_36"
+        android:layout_above="@+id/ll_info_bg"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_mini"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/icon_share"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

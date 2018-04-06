@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_actionbar"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal" >
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="left|center_vertical"
+        android:maxLength="@integer/MAX_NAME_LEN"
+        android:textColor="@color/black"
+        android:text="@string/Male_3_Lot"
+        android:textSize="@dimen/text_size_large" />
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right|center_vertical"
+        android:maxLength="@integer/MAX_NAME_LEN"
+        android:textColor="@color/bgm_pink"
+        android:text="@string/Qty.3"
+        android:textSize="@dimen/text_size_large" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_horizontal_line"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey" />
+
+</RelativeLayout>

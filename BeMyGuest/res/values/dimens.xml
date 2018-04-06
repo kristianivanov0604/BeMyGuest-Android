@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimensions for Sliding Menu -->
+    <dimen name="behind_offset">0dp</dimen>
+    <dimen name="avatar_size">110dp</dimen>
+    
+    <!-- Dimensions for BeMyGuest Icon -->
+    <dimen name="width_large_icon">200dp</dimen>
+    <dimen name="height_large_icon">144dp</dimen>
+    <dimen name="width_small_icon">160dp</dimen>
+    <dimen name="height_small_icon">115dp</dimen>
+        
+    <!-- Dimensions for Buttons -->
+    <dimen name="height_large_button">60dp</dimen>
+    <dimen name="height_small_button">48dp</dimen>
+    <dimen name="height_mask_bar">120dp</dimen>
+    
+    <!-- Paddings -->
+    <dimen name="padding_normal">18dp</dimen>
+    <dimen name="padding_mini">12dp</dimen>
+    <dimen name="padding_large">42dp</dimen>
+    <dimen name="padding_facebook">30dp</dimen>
+    <dimen name="space_mini">8dp</dimen>
+    <dimen name="space_normal">10dp</dimen>
+    
+    <!-- Margins -->
+    <dimen name="margin_normal">18dp</dimen>
+    <dimen name="margin_mini">12dp</dimen>
+    <dimen name="margin_medium">36dp</dimen>
+    <dimen name="margin_large">48dp</dimen>
+
+    <!-- Dimens for text size -->
+    <dimen name="text_size_extra_large">22sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_mini">14dp</dimen>
+    
+    <!-- Dimens for ActionBar -->
+    <dimen name="height_actionbar">48dp</dimen>
+    
+    <!-- Dimens for Round Rect -->
+    <dimen name="height_36">36dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+
+    <!-- Dimensions for list item -->
+    <dimen name="height_event_listitem">192dp</dimen>
+    
+    <!-- Dimensions for Map -->
+    <dimen name="height_maptag_info">163dp</dimen>
+    <dimen name="width_maptag_info">115dp</dimen>
+
+    <!-- Dimensions for Profile -->
+    <dimen name="profile_avatar_size">120dp</dimen>
+    <dimen name="height_horizontal_line">0.5dp</dimen>
+    <dimen name="avatar_edge_width">5dp</dimen>
+    
+    
+</resources>
